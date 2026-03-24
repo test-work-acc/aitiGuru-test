@@ -1,1 +1,1 @@
-git config --global user.name "НОВЫЙ_ЛОГИН"
+

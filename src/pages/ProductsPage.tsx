@@ -27,7 +27,7 @@ export function ProductsPage() {
 
     const skip = (currentPage - 1) * ITEMS_PER_PAGE;
 
-    const { data, isLoading, isError, refetch } = useProducts({
+    const { data, isLoading, isError } = useProducts({
         limit: ITEMS_PER_PAGE,
         skip: debouncedSearch ? 0 : skip,
         q: debouncedSearch || undefined,
